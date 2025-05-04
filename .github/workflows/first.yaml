@@ -7,13 +7,13 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        images: [hello-world, alpine]
+   
     runs-on: ${{matrix.os}}
     steps:
     - name: run docker
-      uses: docker-practice/actions-setup-docker@master
+      uses: docker/setup-docker-action@feature
     - name: run image
       run: docker info
     - name: run image
-      run: docker run ${{matrix.images}}
+      run: docker run hello-world
 
