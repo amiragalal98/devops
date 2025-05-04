@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{matrix.os}}
     steps:
     - name: run docker
-      uses: docker/setup-docker
+      uses: docker-practice/actions-setup-docker@master
     - name: run image
       run: docker info
     - name: run image
