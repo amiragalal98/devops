@@ -5,13 +5,16 @@ on: push
 jobs:
   say-hello:
     
-   
+
     runs-on: ubuntu-latest
     steps:
-    - name: run docker
-      uses: docker/setup-docker-action@v4
+    - name: run
+      uses: sudo apt-get install cowsay -y
     - name: run image
-      run: docker info
+      run: cowsay -f dragon "run for cover, iam a dragon">>dragon.txt
     - name: run image
-      run: docker run hello-world
+      run: grep -i "dragon" dragon.txt
+    - name: run image
+      run: ls
+
 
