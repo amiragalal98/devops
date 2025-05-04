@@ -8,13 +8,13 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-    - name: run
-      run: sudo apt-get install cowsay -y
-    - name: run image
-      run: cowsay -f dragon "run for cover, iam a dragon">>dragon.txt
-    - name: run image
-      run: grep -i "dragon" dragon.txt
-    - name: run image
+    - name: checkout
+      uses: actions/checkout@v4.2.2
+    - name: list files
       run: ls
+    - name: give perm
+      run: chmod +x script.sh
+    - name: install cowsay program
+      run: ./script.sh
 
 
