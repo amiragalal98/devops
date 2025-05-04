@@ -4,7 +4,12 @@ on: push
 
 jobs:
   say-hello:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    runs-on: ${(matrix.os)}
     steps:
     - name: Say Hello
       run: echo "Hello from a auto triggered workflow!"
+
+
