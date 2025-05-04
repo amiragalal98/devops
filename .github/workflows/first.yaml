@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: run docker
-      uses: docker/setup-docker-action@feature
+      uses: docker/setup-docker-action@v4
     - name: run image
       run: docker info
     - name: run image
