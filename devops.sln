@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dockerize", "dockerize", "{466ACA72-DCCE-5338-5AD0-2300032DB700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hrapp", "dockerize\dockerhrapp\hrapp.csproj", "{FEE1BAE3-6C10-C37D-D5A9-DEDBAA9F2F29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEE1BAE3-6C10-C37D-D5A9-DEDBAA9F2F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE1BAE3-6C10-C37D-D5A9-DEDBAA9F2F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE1BAE3-6C10-C37D-D5A9-DEDBAA9F2F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE1BAE3-6C10-C37D-D5A9-DEDBAA9F2F29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEE1BAE3-6C10-C37D-D5A9-DEDBAA9F2F29} = {466ACA72-DCCE-5338-5AD0-2300032DB700}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD8DC260-CDDC-4D3E-9CE5-ED4988ACAD29}
+	EndGlobalSection
+EndGlobal
